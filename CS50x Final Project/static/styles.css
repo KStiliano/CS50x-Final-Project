@@ -1,0 +1,74 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+body
+{
+    font-family: "Times New Roman, Times";
+    background-color: grey;
+}
+
+footer
+{
+    color: white;
+    bottom: 0;
+    position: absolute;
+}
+
+main
+{
+    font-family: "Times New Roman, Times";
+}
+
+main #welcome
+{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main #welcome span
+{
+    display: block;
+}
+
+main .text1
+{
+    text-transform: uppercase;
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 1.75s 1;
+}
+
+main .text2
+{
+    font-size: 50px;
+    color: black;
+    animation: text 1.75s 1;
+}
+
+
+@keyframes text {
+    0%{
+        color: white;
+        margin-bottom: -40px;
+    }
+
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}

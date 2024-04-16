@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Generator
+{% endblock %}
+
+{% block main %}
+    <p style="font-size: 20px;"><strong>The generator will give you the top 5 most common chord progressions based on the key given by you.</strong></p>
+    <br>
+    <h2>Chord Progression Generator</h2>
+    <form action="{{ url_for('cpgenerator') }}" method="post">
+        <label for="keyname">Key</label>
+        <input type="text" name="keyname" id="keyname" placeholder="Insert Key">
+        <button type="submit" value="Submit" class="btn btn-success">Generate</button>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Create Progression
+{% endblock %}
+
+{% block main %}
+    <h2>Create Your Own Progression</h2>
+    <form action="{{ url_for('createprogression') }}" method="post">
+        <div class="mb-2">
+            <input type="text" name="keyname" id="keyname" placeholder="Insert Key" style="width: 350px;">
+        </div>
+
+        <div class="mb-2">
+            <input type="text" name="progression" id="progression" placeholder="Insert Progression" style="width: 350px;">
+        </div>
+
+        <div class="mb-2">
+            <input type="text" name="chords" id="chords" placeholder="Insert Chords" style="width: 350px;">
+        </div>
+        <button type="submit" value="Submit" class="btn btn-success">Create</button>
+    </form>
+{% endblock %}

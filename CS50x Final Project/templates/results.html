@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block main %}
+    <h2>Results</h2>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th>Key Name</th>
+                <th>Progressions</th>
+                <th>Chords</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            {% for progression in progressions %}
+                <tr>
+                    <td>{{ progression.keyname }}</td>
+                    <td>{{ progression.progressions }}</td>
+                    <td>{{ progression.chords }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
